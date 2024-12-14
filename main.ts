@@ -5,7 +5,15 @@ function まえ () {
     pins.analogWritePin(AnalogPin.P16, 100)
 }
 input.onButtonPressed(Button.A, function () {
-	
+    まえ()
+    basic.pause(1000)
+    うしろ()
+    basic.pause(1000)
+    時計回り()
+    basic.pause(1000)
+    反時計回り()
+    basic.pause(1000)
+    停止()
 })
 function 時計回り () {
     pins.digitalWritePin(DigitalPin.P13, 0)
